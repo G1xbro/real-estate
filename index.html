@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stunning Real Estate Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo"><img src="images/logo.png" alt="Real Estate Logo"></div>
+    <nav>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#floorplan">Floor Plan</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+    </nav>
+    <div class="phone"><b>📞</b>
+       +91-9625253930</div>
+  </header>
+  
+  <div class="contact-us-box">
+    <button onclick="openPopup()">Enquire Now</button>
+  </div>
+
+<!-- Image Carousel -->
+  <section class="carousel">
+    <div class="carousel-container">
+      <img src="images/Head_1.png" class="carousel-item">
+      <img src="images/Head_2.png" class="carousel-item">
+      <img src="images/Head_3.png" class="carousel-item">
+    </div>
+    <button class="carousel-btn left" onclick="prevSlide()">❮</button>
+    <button class="carousel-btn right" onclick="nextSlide()">❯</button>
+  </section>
+
+  <!-- Overview -->
+  <section id="overview">
+    <h2>Overview</h2>
+    <p>
+      Discover a home that’s as unique as your dreams, a place where every detail is crafted to elevate your life. Welcome to Spring Elmas, a premium collection of 3 & 4 BHK and Duplex residences by Spring Group, where luxury meets tranquility. Nestled in the heart of nature with expansive green spaces, these modern homes offer not just comfort, but a sense of belonging. With thoughtfully designed leisure amenities and an atmosphere of serenity, Spring Elmas surprises you with new joys every day. Its prime location ensures seamless connectivity, bringing the best of the world closer to you. Experience the perfect balance of peace, luxury, and convenience — make Spring Elmas your sanctuary.</p>
+  </section>
+
+  <!-- Prices -->
+  <section id="prices">
+    <h2>Prices</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Property Type</th>
+          <th>Area (sq.ft.)</th>
+          <th>Price</th>
+          <th>Book now</th>
+          <th>Floor Layout</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3 BHK Apartment</td>
+          <td>1355 Sq.ft</td>
+          <td>Rs. 1.49 Cr (onwards)</td>
+          <td><button onclick="openPopup()">For more variants</button></td>
+          <td>
+            <div class="dropdown-content" id="layout1">
+              <img src="images/floor3bhk.png" alt="3 BHK Layout" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>4 BHK Apartment</td>
+          <td>2450 Sq.ft</td>
+          <td>Rs. 2.59 Cr (onwards)</td>
+          <td><button onclick="openPopup()">For more details</button></td>
+          <td>
+            <div class="dropdown-content" id="layout2">
+              <img src="images/floor4bhk.png" alt="4 BHK Layout" />
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="highlights">
+    <h2>Highlights</h2>
+    <div class="highlights-container">
+      <div class="highlight-item" style="--bg-color: #C2BA9B">
+        <p>Cycling Track</p>
+        <img src="images/cycling.jpg" alt="Cycling Track">
+      </div>
+      <div class="highlight-item" style="--bg-color: #C5D1CA">
+        <p>Jogging Track</p>
+        <img src="images/jogging.jpeg" alt="Jogging Track">
+      </div>
+      <div class="highlight-item" style="--bg-color: #6D8B6E">
+        <p>Park Area</p>
+        <img src="images/park.jpeg" alt="Park Area">
+      </div>
+      <div class="highlight-item" style="--bg-color: #98D78F">
+        <p>Badminton Court</p>
+        <img src="images/badminton.jpg" alt="Badminton Court">
+      </div>
+      <div class="highlight-item" style="--bg-color: #D7B274">
+        <p>Cricket Pitch</p>
+        <img src="images/cricket.jpg" alt="Cricket Pitch">
+      </div>
+      <div class="highlight-item" style="--bg-color: #A8D8E0">
+        <p>Swimming Pool</p>
+        <img src="images/pool.jpeg" alt="Swimming Pool">
+      </div>
+      <div class="highlight-item" style="--bg-color: #8C9C9D">
+        <p>Basketball Court</p>
+        <img src="images/basketball.jpeg" alt="Basketball Court">
+      </div>
+      <div class="highlight-item" style="--bg-color: #B9C7B2">
+        <p>Open Air Gym</p>
+        <img src="images/gym.jpg" alt="Open Air Gym">
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Floor Plan -->
+  <section id="floorplan">
+    <h2>Society Plan</h2>
+    <img src="images/Society_plan.png" alt="Society Plan">
+  </section>
+
+  <!-- Amenities -->
+  <section id="amenities">
+    <center><img src="images/metro.png" alt="metro route"></center>
+  </section>
+
+  <!-- Location -->
+  <section id="location">
+    <h2>Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224145.24793035229!2d77.23279075511142!3d28.621683927968952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ced00711598bf%3A0x456f1e4ce9100f4d!2sSpring%20Elmas!5e0!3m2!1sen!2sin!4v1735449574718!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+<!-- Popup Form -->
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="tel" id="mobile" placeholder="Mobile No." required>
+      <input type="email" id="email" placeholder="Email-ID" required>
+      <textarea id="comments" placeholder="Comments"></textarea>
+      <button type="button" onclick="sendToWhatsApp()">Submit</button>
+    </form>
+  </div>
+</div>
+
+  
+  <footer>
+    <p><center>&copy; 2024 Spring Elmas
+      All Rights Reserved.
+    </center></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
